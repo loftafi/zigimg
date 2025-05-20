@@ -983,7 +983,7 @@ pub fn CustomReaderOptions2(Processor1: type, Processor2: type) type {
 
 const root = @import("root");
 
-pub const NoopAllocator = Allocator.VTable{ .alloc = undefined, .free = undefined, .resize = undefined, .remap = undefine };
+pub const NoopAllocator = Allocator.VTable{ .alloc = undefined, .free = undefined, .resize = undefined, .remap = undefined };
 
 /// Applications can override this by defining DefaultPngOptions struct in their root source file.
 /// We would like to use FixedBufferAllocator with memory from stack here since we should be able
